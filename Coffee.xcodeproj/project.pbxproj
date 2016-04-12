@@ -16,6 +16,8 @@
 		A1D201AB1CADDC8F003006DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D201AA1CADDC8F003006DB /* Assets.xcassets */; };
 		A1D201AE1CADDC8F003006DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D201AC1CADDC8F003006DB /* LaunchScreen.storyboard */; };
 		A1D201B61CADDCC3003006DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A1D201B51CADDCC3003006DB /* Podfile */; };
+		F9460E521CBD08B00046AB08 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9460E511CBD08B00046AB08 /* Venue.swift */; };
+		F9460E541CBD0D810046AB08 /* CoffeeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9460E531CBD0D810046AB08 /* CoffeeAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		E9EBCD2A55E4A782F2CB290B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EA606FB9E0DA082F9F54DD2B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46F96888C18907B2E411D90 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F9460E511CBD08B00046AB08 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		F9460E531CBD0D810046AB08 /* CoffeeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 				A1D201AC1CADDC8F003006DB /* LaunchScreen.storyboard */,
 				A1D201AF1CADDC8F003006DB /* Info.plist */,
 				A1A54F631CAFAAEF00F513B9 /* CoffeeAPI.swift */,
+				F9460E511CBD08B00046AB08 /* Venue.swift */,
+				F9460E531CBD0D810046AB08 /* CoffeeAnnotation.swift */,
 			);
 			path = Coffee;
 			sourceTree = "<group>";
@@ -133,6 +139,7 @@
 				TargetAttributes = {
 					A1D2019F1CADDC8F003006DB = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 76YV7W3TRL;
 					};
 				};
 			};
@@ -222,6 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1D201A61CADDC8F003006DB /* ViewController.swift in Sources */,
+				F9460E541CBD0D810046AB08 /* CoffeeAnnotation.swift in Sources */,
+				F9460E521CBD08B00046AB08 /* Venue.swift in Sources */,
 				A1A54F641CAFAAEF00F513B9 /* CoffeeAPI.swift in Sources */,
 				A1D201A41CADDC8F003006DB /* AppDelegate.swift in Sources */,
 			);
@@ -335,6 +344,7 @@
 			baseConfigurationReference = E9EBCD2A55E4A782F2CB290B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Coffee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Coffee;
@@ -347,6 +357,7 @@
 			baseConfigurationReference = F46F96888C18907B2E411D90 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Coffee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Coffee;

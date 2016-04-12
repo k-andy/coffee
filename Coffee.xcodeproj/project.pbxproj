@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EAAA0BA7A9AC87F45D4FA72 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA606FB9E0DA082F9F54DD2B /* Pods.framework */; };
+		A18A16BB1CADE17E00A0FDBD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18A16BA1CADE17E00A0FDBD /* MapKit.framework */; };
+		A1A54F641CAFAAEF00F513B9 /* CoffeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A54F631CAFAAEF00F513B9 /* CoffeeAPI.swift */; };
 		A1D201A41CADDC8F003006DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D201A31CADDC8F003006DB /* AppDelegate.swift */; };
 		A1D201A61CADDC8F003006DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D201A51CADDC8F003006DB /* ViewController.swift */; };
 		A1D201A91CADDC8F003006DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D201A71CADDC8F003006DB /* Main.storyboard */; };
 		A1D201AB1CADDC8F003006DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D201AA1CADDC8F003006DB /* Assets.xcassets */; };
 		A1D201AE1CADDC8F003006DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1D201AC1CADDC8F003006DB /* LaunchScreen.storyboard */; };
+		A1D201B61CADDCC3003006DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A1D201B51CADDCC3003006DB /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A18A16BA1CADE17E00A0FDBD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A1A54F631CAFAAEF00F513B9 /* CoffeeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeAPI.swift; sourceTree = "<group>"; };
 		A1D201A01CADDC8F003006DB /* Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D201A31CADDC8F003006DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1D201A51CADDC8F003006DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		A1D201AA1CADDC8F003006DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1D201AD1CADDC8F003006DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1D201AF1CADDC8F003006DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1D201B51CADDCC3003006DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E9EBCD2A55E4A782F2CB290B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EA606FB9E0DA082F9F54DD2B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F46F96888C18907B2E411D90 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A18A16BB1CADE17E00A0FDBD /* MapKit.framework in Frameworks */,
+				1EAAA0BA7A9AC87F45D4FA72 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BF84C8CFF4D328473245CC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A18A16BA1CADE17E00A0FDBD /* MapKit.framework */,
+				EA606FB9E0DA082F9F54DD2B /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56AFE3AAA2C5EFC0FD4171AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9EBCD2A55E4A782F2CB290B /* Pods.debug.xcconfig */,
+				F46F96888C18907B2E411D90 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A1D201971CADDC8F003006DB = {
 			isa = PBXGroup;
 			children = (
+				A1D201B51CADDCC3003006DB /* Podfile */,
 				A1D201A21CADDC8F003006DB /* Coffee */,
 				A1D201A11CADDC8F003006DB /* Products */,
+				56AFE3AAA2C5EFC0FD4171AE /* Pods */,
+				1BF84C8CFF4D328473245CC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +93,7 @@
 				A1D201AA1CADDC8F003006DB /* Assets.xcassets */,
 				A1D201AC1CADDC8F003006DB /* LaunchScreen.storyboard */,
 				A1D201AF1CADDC8F003006DB /* Info.plist */,
+				A1A54F631CAFAAEF00F513B9 /* CoffeeAPI.swift */,
 			);
 			path = Coffee;
 			sourceTree = "<group>";
@@ -71,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1D201B21CADDC8F003006DB /* Build configuration list for PBXNativeTarget "Coffee" */;
 			buildPhases = (
+				A55ABEA535AAA6D07563D0FB /* Check Pods Manifest.lock */,
 				A1D2019C1CADDC8F003006DB /* Sources */,
 				A1D2019D1CADDC8F003006DB /* Frameworks */,
 				A1D2019E1CADDC8F003006DB /* Resources */,
+				EA04F884846235196146CD7D /* Embed Pods Frameworks */,
+				059F3167966D11513AB34B7E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,11 +161,60 @@
 			files = (
 				A1D201AE1CADDC8F003006DB /* LaunchScreen.storyboard in Resources */,
 				A1D201AB1CADDC8F003006DB /* Assets.xcassets in Resources */,
+				A1D201B61CADDCC3003006DB /* Podfile in Resources */,
 				A1D201A91CADDC8F003006DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		059F3167966D11513AB34B7E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55ABEA535AAA6D07563D0FB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA04F884846235196146CD7D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1D2019C1CADDC8F003006DB /* Sources */ = {
@@ -136,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1D201A61CADDC8F003006DB /* ViewController.swift in Sources */,
+				A1A54F641CAFAAEF00F513B9 /* CoffeeAPI.swift in Sources */,
 				A1D201A41CADDC8F003006DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +332,7 @@
 		};
 		A1D201B31CADDC8F003006DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9EBCD2A55E4A782F2CB290B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Coffee/Info.plist;
@@ -256,6 +344,7 @@
 		};
 		A1D201B41CADDC8F003006DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F46F96888C18907B2E411D90 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Coffee/Info.plist;
@@ -284,6 +373,7 @@
 				A1D201B41CADDC8F003006DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
